@@ -57,7 +57,7 @@ pi_32 : ## Build the tools for RaspberryPi 32bit
 	@ make GOBUILD_ENVS="$(GOBUILD_ENVS) GOOS=linux GOARCH=arm"
 
 pi_64 : ## Build the tools for RaspberryPi 64bit
-	@ echo "[#] build for $@
+	@ echo "[#] build for $@"
 	@ make GOBUILD_ENVS="$(GOBUILD_ENVS) GOOS=linux GOARCH=arm64"
 
 darwin : ## Build the tools for OS X
